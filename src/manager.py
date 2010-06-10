@@ -5,11 +5,11 @@ import gtk
 import cream
 from cream.contrib.udisks import UDisks
 
-pynotify.init('Cream Volume Manager')
+pynotify.init('Cream Device Manager')
 
 EXPIRES = 5000
 
-class VolumeManager(UDisks, cream.Module):
+class DeviceManager(UDisks, cream.Module):
     def __init__(self):
         cream.Module.__init__(self)
         UDisks.__init__(self)
@@ -28,5 +28,5 @@ class VolumeManager(UDisks, cream.Module):
         n.show()
 
 if __name__ == '__main__':
-    service = VolumeManager()
+    service = DeviceManager()
     service.main()
