@@ -3,7 +3,7 @@ import pynotify
 import gtk
 
 import cream
-from cream.contrib.udisks import UDisks
+from udisks.udisks import UDisks
 
 pynotify.init('Cream Device Manager')
 
